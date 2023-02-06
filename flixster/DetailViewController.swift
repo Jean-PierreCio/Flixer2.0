@@ -35,7 +35,7 @@ class DetailViewController: UIViewController {
 
         
        
-        Nuke.loadImage(with: movie.back_drop_path, into: back_drop_image)
+        Nuke.loadImage(with: URL(string:"https://image.tmdb.org/t/p/w185" + movie.poster_path)!, into: back_drop_image)
            
         movie_title.text = movie.original_title
                 

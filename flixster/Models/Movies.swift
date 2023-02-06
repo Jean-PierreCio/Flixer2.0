@@ -29,18 +29,18 @@ struct Movie: Decodable {
     var original_title: String
     var overview: String
     
-    var poster_path: URL // when loading image with Nuke, make sure you convert to url by prepending base url
-    //static var posterBaseURLString: String = "https://image.tmdb.org/t/p/w185"
+    var poster_path: String// when loading image with Nuke, make sure you convert to url by prepending base url
+    static var posterBaseURLString: String = "https://image.tmdb.org/t/p/w185"
 
     var vote_average: Double
     var vote_count: Int
     var popularity: Double
     
-    var back_drop_path: URL
+  //  var back_drop_path: URL
     
 }
 
-
+/*
 extension Movie {
 
     /// An array of mock tracks
@@ -51,9 +51,11 @@ extension Movie {
         Movie(original_title: "Devotion", overview: "The harrowing true story of two elite US Navy fighter pilots during the Korean War. Their heroic sacrifices would ultimately make them the Navy's most celebrated wingmen.", poster_path: URL(string: "https://image.tmdb.org/t/p/w185/26yQPXymbWeCLKwcmyL8dRjAzth.jpg")!, vote_average: 7.6, vote_count: 178, popularity: 2256.342, back_drop_path: URL(string: "https://image.tmdb.org/t/p/w185/5pMy5LF2JAleBNBtuzizfCMWM7k.jpg")!),
         Movie(original_title: "The Enforcer", overview: "A noir thriller set in Miami, the film follows an enforcer who discovers his femme fatale boss has branched out into cyber sex trafficking, putting a young runaway he’s befriended at risk. He sacrifices everything to save the young girl from the deadly organization he’s spent his life building.", poster_path: URL(string: "https://image.tmdb.org/t/p/w185/72V1r1G8S87ELagVxjqAUdChMCt.jpg")!, vote_average: 7.3, vote_count: 117, popularity: 1830.972,back_drop_path: URL(string: "https://image.tmdb.org/t/p/w185/Aqldsq65Nj1KAkQD2MzkZsAk5N5.jpg")!)
     ]
+ 
+ 
 
     // We can now access this array of mock movies anywhere like this:
     // let movies = Movies.mockMovies
 }
-
+*/
 

@@ -17,6 +17,8 @@ class MovieCell: UITableViewCell {
 
 
     
+
+    
     @IBOutlet weak var movieImageView: UIImageView!
     
     @IBOutlet var movieNameLabel: UILabel!
@@ -28,7 +30,8 @@ class MovieCell: UITableViewCell {
     func configure(with movie: Movie) {
         movieNameLabel.text = movie.original_title
         movieOverviewLabel.text = movie.overview
-        Nuke.loadImage(with: movie.poster_path, into: movieImageView)
+        
+        Nuke.loadImage(with: URL(string: "https://image.tmdb.org/t/p/w185" + movie.poster_path)!, into: movieImageView)
     }
     
     
